@@ -17,15 +17,15 @@ const TeamMembersComponent = () => {
       name: 'Samrudhi Shetty',
       position: 'Lead',
       photoUrl: rudalph,
-      instagramLink: 'https://www.instagram.com/samrudhishetty/',
+      instagramLink: 'https://www.instagram.com/samrudhishetty?igsh=eWNnOWYzcWFraTA1',
       linkedinLink: 'https://www.linkedin.com/in/samrudhi-shetty-5a227b264',
     },
     {
       name: 'Shreyas Gonsalves',
       position: 'Co-Lead',
       photoUrl: shruti,
-      instagramLink: 'https://instagram.com/',
-      linkedinLink: 'https://www.instagram.com/shreyas27_g?igsh=MXdhOTRjbW40bHl1cg==',
+      instagramLink: 'https://www.instagram.com/shreyas27_g?igsh=MXdhOTRjbW40bHl1cg==',
+      linkedinLink: 'https://www.linkedin.com/in/shreyasgonsalves',
     },
     {
       name: 'Yash Punmiya',
@@ -38,15 +38,15 @@ const TeamMembersComponent = () => {
       name: 'Anisa Pereira',
       position: 'Event Co-ordinator',
       photoUrl: aaron,
-      instagramLink: 'https://instagram.com/aaron_pereira__?igshid=OGQ5ZDc2ODk2ZA==',
+      instagramLink: 'https://www.instagram.com/anisa_pereira16/profilecard/?igsh=dmQyc21kdnMzZXo3',
       linkedinLink: 'https://www.linkedin.com/in/anisa-pereira-581666287',
     },
     {
       name: 'Nishant Maurya',
       position: 'Graphics Lead',
       photoUrl: alroy,
-      instagramLink: 'https://instagram.com/alroy_pereira?igshid=MzRlODBiNWFlZA==',
-      linkedinLink: 'https://www.linkedin.com/in/alroy-pereira-2b3631248',
+      instagramLink: 'https://instagram.com/',
+      linkedinLink: 'https://www.linkedin.com/in/nishant-maurya-45bb86276/',
     },
    
   ];
