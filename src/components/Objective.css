@@ -1,0 +1,107 @@
+.objective-container {
+  background-color: #ddf1fff7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 50px 20px;
+  /* box-shadow: 0px 8px  20px rgba(0, 0, 0, 0.2) */
+}
+
+.obj-cards-container {
+  display: flex;
+  width: 90vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.obj-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px; 
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  color: rgb(41,83,155);
+  text-align: start;
+  margin: 10px;
+  padding: 20px 30px 10px 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.obj-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgb(130, 172, 235);
+}
+
+.obj-card h2 {
+  margin: 5px 5px 5px 0px;
+  font-size: 18px;
+  color: rgb(22, 174, 255);
+}
+
+.obj-card p {
+  font-size: 25px;
+  text-align: start;
+  /* padding: 0px 10px; */
+}
+
+@media (max-width: 48em) {
+  .obj-cards-container {.objective-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .objectives-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .obj-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ddfcf9; 
+    /* padding: 20px;  */
+    padding-bottom: 50px;
+  }
+  
+  
+  
+  .obj-card:hover {
+    transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgb(130, 172, 235);
+  }
+  
+  .obj-card h2 {
+    font-size: 18px;
+  }
+  
+  .obj-card p {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .obj-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .obj-card {
+      width: 80vw;
+    }
+  }
+
+  }
+
+  .obj-card {
+    width: 100%;
+  }
+}

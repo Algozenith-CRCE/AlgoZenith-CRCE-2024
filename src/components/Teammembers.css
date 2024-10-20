@@ -1,0 +1,210 @@
+.team-members-container {
+    background-color: #ddf1fff7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .team-members-title {
+    font-size: 2rem;
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: rgb(41, 83, 155);
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+  .card {
+    flex: 0 1 calc(33.333% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgb(130, 172, 235);
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    padding: 30px 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .card-circle {
+    background-color: white;
+    padding: 20px 0px;
+    border-radius: 48%;
+    box-shadow: 0px 80px 20px 15px #ddf1fff7 ;
+  }
+  
+  /* rgba(119, 225, 251, 0.367) */
+  
+  .card .card-circle {
+    width: 100%; 
+  }
+  
+  .member-photo {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    position: relative;
+    transition: all 0.3s ease; /* Add smooth transition */
+  }
+
+  .card:hover {
+    background-color: #088FFA;
+    .card-circle {
+      transition: background-color 0.4s ease-in;
+      background-color: rgb(224, 255, 255);
+      box-shadow: 0px 80px 20px 15px rgb(22, 174, 255) ;
+      box-shadow: 0px 80px 20px 15px rgb(22, 174, 255) ;
+    }
+    transition: background-color 0.4s ease-in;
+    /* transition:  0.7s ease-in-out; */
+
+    .member-photo {
+      border: solid 2px #0077B5 ;
+    }
+  } 
+  
+  .member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+
+
+  
+  .card h2 {
+    font-size: 18px;
+    color: rgb(22, 174, 255);
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 1200px) {
+    .card {
+      flex: 0 1 calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 1 calc(100% - 20px);
+    }
+  }
+
+  /* @media (max-width: 600px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      min-width: 80%; 
+      width: 40vw; 
+    }
+  } */
+
+  @media (max-width: 48em) {
+    .cards-container {.objective-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .objectives-heading {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70vw;
+      justify-content: center;
+      gap: 20px;
+      background-color: #ddfcf9; 
+      /* padding: 20px;  */
+      padding-bottom: 50px;
+    }
+    
+    
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 15px rgb(130, 172, 235);
+    }
+    
+    .card h2 {
+      font-size: 18px;
+    }
+    
+    .card p {
+      font-size: 14px;
+    }
+    
+    @media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .card {
+        width: 80vw;
+      }
+    }
+  
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .icon {
+    color: #0077B5; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .icon.instagram-icon {
+    color: #e4405f;
+  }
+  
+  .icon.instagram-icon:hover {
+    color: rgb(22, 174, 255); 
+  }
+  .icon.linkedin-icon:hover {
+    color: rgb(22, 174, 255); 
+  }
+  
+  
+/* New styles for lead photo */

@@ -1,0 +1,43 @@
+.notfound-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E9FDFF;
+  width: 100vw;
+  height: 100vh;
+}
+
+.notfound-container p {
+  text-align: center;
+  color: #4fa6fe;
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.nf-button {
+  background-color: #066DFD;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 25px;
+  width: 200px;
+  transition: 0.3s ease;
+}
+
+.nf-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 15px #5bd9ff;
+  cursor: pointer;
+}
+
+.nf-logo {
+  width: 200px;
+}
+
+@media (max-width: 400px) {
+  .nf-logo {
+    margin-bottom: 15px;
+  }
+}

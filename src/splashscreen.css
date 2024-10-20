@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34; /* Background color */
+  color: white; /* Text color */
+  position: relative; /* Positioning for animation */
+  overflow: hidden; /* Prevent overflow during animations */
+}
+
+.splash-content {
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 20px; /* Space between logo and loading bar */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.splash-image {
+  height: 100px; /* Height of the logo */
+  width: auto; /* Keep aspect ratio */
+}
+
+.loading-container {
+  width: 100%; /* Full width for loading container */
+  position: relative; /* Position for the loading bar */
+  margin-top: 20px; /* Space above loading bar */
+}
+
+.loading-bar {
+  width: 100%; /* Full width */
+  height: 20px; /* Height of the loading bar */
+  background: linear-gradient(to right, #444 0%, #333 100%); /* Gradient background */
+  border-radius: 10px; /* Rounded edges */
+  overflow: hidden; /* Hide overflow for smooth progress */
+  position: relative; /* Positioning for inner elements */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow effect */
+}
+
+.loading-bar-progress {
+  height: 100%; /* Full height */
+  background-color: #32cdf8; /* Color of the progress bar */
+  width: 0; /* Initial width */
+  animation: loading 3s linear forwards; /* Loading animation */
+  position: relative; /* Positioning for stacking context */
+  z-index: 1; /* On top of the glow effect */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.loading-percentage {
+  margin-top: 10px; /* Space between loading bar and percentage text */
+  font-size: 1.5em; /* Font size for percentage text */
+  animation: fadeIn 0.5s ease-in; /* Fade-in for percentage */
+}
+
+/* Loading Animation for Progress Bar */
+@keyframes loading {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 50%; /* Midpoint bounce effect */
+    transform: scaleY(1.1); /* Bounce effect */
+  }
+  100% {
+    width: 100%; /* Full width */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Outro animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px); /* Optional slide up effect */
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards; /* Apply fade-out animation */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .splash-image {
+    height: 80px; /* Height for smaller screens */
+  }
+
+  .loading-percentage {
+    font-size: 1.2em; /* Smaller font size for loading percentage */
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-image {
+    height: 60px; /* Height for mobile screens */
+  }
+
+  .loading-percentage {
+    font-size: 1em; /* Smaller font size for loading percentage */
+  }
+}
