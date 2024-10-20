@@ -17,7 +17,7 @@ const TeamMembersComponent = () => {
       name: 'Samrudhi Shetty',
       position: 'Lead',
       photoUrl: rudalph,
-      instagramLink: 'https://www.instagram.com/samrudhishetty?igsh=eWNnOWYzcWFraTA1',
+      instagramLink: 'https://www.instagram.com/_samrudhishetty_?igsh=eWNnOWYzcWFraTA1',
       linkedinLink: 'https://www.linkedin.com/in/samrudhi-shetty-5a227b264',
     },
     {
@@ -31,8 +31,8 @@ const TeamMembersComponent = () => {
       name: 'Yash Punmiya',
       position: 'Technical Lead',
       photoUrl: punit,
-      instagramLink: 'https://instagram.com/punitirl?igshid=MzRlODBiNWFlZA==',
-      linkedinLink: 'https://www.linkedin.com/in/punit-giri',
+      instagramLink: 'https://www.instagram.com/yashpunmiya_/profilecard/?igsh=MXQ4MHBvZW9ueGJjdw==',
+      linkedinLink: 'https://www.linkedin.com/in/yash-punmiya-27a6a8296/',
     },
     {
       name: 'Anisa Pereira',
